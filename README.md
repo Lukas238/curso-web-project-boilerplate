@@ -1,6 +1,66 @@
-#Web-Project-Boilerplate
+#Curso Web-Project-Boilerplate
+Por Lucas Dasso, Alexis Boggan, y Pablo Galano
+
 Boilerplate for web projects with gulp, sass, and bootstrap.Boilerplate for web projects.
 
+---
+
+##Contenido del curso
+
+###Prerrequisitos:
+
+####Sección 1: Introducción
+- Metodología de trabajo
+- Readme.md
+- Estructura básica de carpetas(src, dist, y docs).
+- Organización del source (images, css, js).
+
+####Sección 2: Automatización básica
+- Configuración inicial (package.json). 
+- Node  package manager
+- Introducción básica a administrador de tareas Gulp.
+- Gulp. Servidor web en dist folder.
+js).
+
+####Sección 3: Automatización de estilos con SASS
+- Modularización de estilos: _base, _fonts, _globals, _layout, y styles.
+- Diseño atómico de componentes.
+-  Organización de componentes.
+- Introducción a SASS.
+- Gulp: Compilación de estilos SASS.
+- SASS: @imports, y @variables.
+
+####Sección 4: Administración de paquetes con Bower
+- Instalación de Bower.
+- Configuración.
+- Bower. Instalación de recursos: jQuery, Bootstrap, FontAwesome, Slick - Slider.
+- Gulp. Unificación de recursos (estilos, scripts, y fonts).
+
+####Sección 5: Mixins de SASS
+- Diseño semántico de grillas.
+- SASS. Introducción a mixins.
+- Bower. Instalación de Bootstrap-SASS.
+- SASS. Integración de Boostrap-SASS  mixins de grilla con estilos del sitio.
+
+####Sección 6: Guía de estilos automática
+- Introducción a Styledocco.
+- Gulp. Configuración de styledocco.
+- Gulp. Servidor de documentación.
+- Introducción a Markdown.
+- Documentación rápida de componentes con Markdown.
+
+####Sección 7: Otras mejoras
+- Optimización de imágenes.
+- Excluir archivos sin modificar en las tareas de Gulp.
+- Generación de archivos .map para debugear los estilos sass.
+- Live edit de archivos sass con Google Chrome Workbench.
+
+
+
+
+
+
+---
 
 ##Folder structure
 	+---components
@@ -11,7 +71,7 @@ Boilerplate for web projects with gulp, sass, and bootstrap.Boilerplate for web 
 		+---images
 		+---js
 		+---scss
-		�   +---components
+		¦   +---components
 		+---vendors
 
 - **\src**: Where all project files are developed.
