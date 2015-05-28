@@ -86,6 +86,7 @@ js).
 - [Ruby]
 - [Gulp]
 - [Bower]
+- [SmartGit]. GUI para git.
 
 **Note**: In some networks Node.js or bower fail to access the packages because the _git://_ protocole is blocked. A workaround is to configure **Git** to globally use the protocol _https://_ instead.
 
@@ -132,3 +133,4 @@ This task compile all files from **\src** folder fo **\dist** folder.
 [Ruby]: http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.2.2.exe
 [Gulp]: https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md
 [Bower]: http://bower.io/#install-bower
+[SmartGit]: http://www.syntevo.com/smartgit/download?file=smartgit/smartgit-win32-setup-jre-6_5_8.zip
