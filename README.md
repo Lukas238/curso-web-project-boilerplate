@@ -4,6 +4,14 @@ Por Lucas Dasso, Alexis Boggan, y Pablo Galano
 
 Boilerplate for web projects with gulp, sass, and bootstrap.Boilerplate for web projects.
 
+##Tecnologías
+- Sass
+- Bootstrap-Sass-official
+- Font-Awesome
+- JQuery 1.11.13
+- HTML5 tags on IE8.
+- MediaQueries in IE8.
+
 ---
 
 **Indice**
@@ -19,7 +27,6 @@ Boilerplate for web projects with gulp, sass, and bootstrap.Boilerplate for web 
 		- [Sección 7: Otras mejoras](#sección-7-otras-mejoras)
 - [Estructura de carpetas](#estructura-de-carpetas)
 - [Requerimientos:](#requerimientos)
-	- [Tecnologías](#tecnologías)
 - [Tareas de Gulp](#tareas-de-gulp)
 	- [Task: "dev"](#task-dev)
 	- [Task: "comps"](#task-comps)
@@ -115,17 +122,9 @@ js).
 **Note**: In some networks Node.js or bower fail to access the packages because the _git://_ protocole is blocked. A workaround is to configure **Git** to globally use the protocol _https://_ instead.
 
 Jus open the git console and run this command:
-
-	$ git config --global url."https://".insteadOf git://
-
-###Tecnologías
-- Sass
-- Bootstrap-Sass-official
-- Font-Awesome
-- JQuery 1.11.13
-- HTML5 tags on IE8.
-- MediaQueries in IE8.
-
+```
+$ git config --global url."https://".insteadOf git://
+```
 
 ##Tareas de Gulp
 
