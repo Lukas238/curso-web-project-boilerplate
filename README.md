@@ -1,7 +1,7 @@
+﻿#Curso Web-Project-Boilerplate
 
-#Curso Web-Project-Boilerplate
+Boilerplate para proyectos web, con Gulp, Sass, y Bootstrap3.
 
-Boilerplate for web projects with gulp, sass, and bootstrap.Boilerplate for web projects.
 
 ##Tecnologías
 - Sass
