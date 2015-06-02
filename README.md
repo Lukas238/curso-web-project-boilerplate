@@ -16,14 +16,13 @@ Boilerplate for web projects with gulp, sass, and bootstrap.Boilerplate for web 
 **Indice**
 
 - [Contenido del curso](#contenido-del-curso)
-	- [Prerrequisitos:](#prerrequisitos)
-		- [Sección 1: Introducción](#sección-1-introducción)
-		- [Sección 2: Automatización básica](#sección-2-automatización-básica)
-		- [Sección 3: Automatización de estilos con SASS](#sección-3-automatización-de-estilos-con-sass)
-		- [Sección 4: Administración de paquetes con Bower](#sección-4-administración-de-paquetes-con-bower)
-		- [Sección 5: Mixins de SASS](#sección-5-mixins-de-sass)
-		- [Sección 6: Guía de estilos automática](#sección-6-guía-de-estilos-automática)
-		- [Sección 7: Otras mejoras](#sección-7-otras-mejoras)
+	- [Sección 1: Introducción](#sección-1-introducción)
+	- [Sección 2: Automatización básica](#sección-2-automatización-básica)
+	- [Sección 3: Automatización de estilos con SASS](#sección-3-automatización-de-estilos-con-sass)
+	- [Sección 4: Administración de paquetes con Bower](#sección-4-administración-de-paquetes-con-bower)
+	- [Sección 5: Mixins de SASS](#sección-5-mixins-de-sass)
+	- [Sección 6: Guía de estilos automática](#sección-6-guía-de-estilos-automática)
+	- [Sección 7: Otras mejoras](#sección-7-otras-mejoras)
 - [Estructura de carpetas](#estructura-de-carpetas)
 - [Requerimientos:](#requerimientos)
 - [Tareas de Gulp](#tareas-de-gulp)
@@ -38,22 +37,20 @@ Boilerplate for web projects with gulp, sass, and bootstrap.Boilerplate for web 
 
 ##Contenido del curso
 
-###Prerrequisitos:
-
-####Sección 1: Introducción
+###Sección 1: Introducción
 - Metodología de trabajo
 - Readme.md
 - Estructura básica de carpetas(src, dist, y docs).
 - Organización del source (images, css, js).
 
-####Sección 2: Automatización básica
+###Sección 2: Automatización básica
 - Configuración inicial (package.json). 
 - Node  package manager
 - Introducción básica a administrador de tareas Gulp.
 - Gulp. Servidor web en dist folder.
 js).
 
-####Sección 3: Automatización de estilos con SASS
+###Sección 3: Automatización de estilos con SASS
 - Modularización de estilos: _base, _fonts, _globals, _layout, y styles.
 - Diseño atómico de componentes.
 -  Organización de componentes.
@@ -61,35 +58,30 @@ js).
 - Gulp: Compilación de estilos SASS.
 - SASS: @imports, y @variables.
 
-####Sección 4: Administración de paquetes con Bower
+###Sección 4: Administración de paquetes con Bower
 - Instalación de Bower.
 - Configuración.
 - Bower. Instalación de recursos: jQuery, Bootstrap, FontAwesome, Slick - Slider.
 - Gulp. Unificación de recursos (estilos, scripts, y fonts).
 
-####Sección 5: Mixins de SASS
+###Sección 5: Mixins de SASS
 - Diseño semántico de grillas.
 - SASS. Introducción a mixins.
 - Bower. Instalación de Bootstrap-SASS.
 - SASS. Integración de Boostrap-SASS  mixins de grilla con estilos del sitio.
 
-####Sección 6: Guía de estilos automática
+###Sección 6: Guía de estilos automática
 - Introducción a Styledocco.
 - Gulp. Configuración de styledocco.
 - Gulp. Servidor de documentación.
 - Introducción a Markdown.
 - Documentación rápida de componentes con Markdown.
 
-####Sección 7: Otras mejoras
+###Sección 7: Otras mejoras
 - Optimización de imágenes.
 - Excluir archivos sin modificar en las tareas de Gulp.
 - Generación de archivos .map para debugear los estilos sass.
 - Live edit de archivos sass con Google Chrome Workbench.
-
-
-
-
-
 
 ---
 
