@@ -1,6 +1,5 @@
 
 #Curso Web-Project-Boilerplate
-Por Lucas Dasso
 
 Boilerplate for web projects with gulp, sass, and bootstrap.Boilerplate for web projects.
 
@@ -31,6 +30,7 @@ Boilerplate for web projects with gulp, sass, and bootstrap.Boilerplate for web 
 	- [Task: "dev"](#task-dev)
 	- [Task: "comps"](#task-comps)
 	- [Task: "build"](#task-build)
+- [Acerca de](#acerca-de)
 
 ---
 
@@ -152,7 +152,11 @@ $ gulp build
 ```
 This task compile all files from **\src** folder fo **\dist** folder.
 
+---
 
+#Acerca de
+
+Curso creado y dictado por [Lucas Dasso] <dassolucas@c238.com.ar>
 
 [Git]: http://git-scm.com/download/win
 [Git for Mac]: http://git-scm.com/download/mac
@@ -164,3 +168,5 @@ This task compile all files from **\src** folder fo **\dist** folder.
 [Bower]: http://bower.io/#install-bower
 [SmartGit]: http://www.syntevo.com/smartgit/download?file=smartgit/smartgit-win32-setup-jre-6_5_8.zip
 [SmartGit for Mac]: http://www.syntevo.com/smartgit/download?file=smartgit/smartgit-macosx-6_5_8.dmg
+
+[Lucas Dasso]: http://www.c238.com.ar
