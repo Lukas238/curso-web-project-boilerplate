@@ -1,31 +1,30 @@
-**Table of Contents**
-
-- [Curso Web-Project-Boilerplate](#)
-	- [Contenido del curso](#)
-		- [Prerrequisitos:](#)
-			- [Sección 1: Introducción](#)
-			- [Sección 2: Automatización básica](#)
-			- [Sección 3: Automatización de estilos con SASS](#)
-			- [Sección 4: Administración de paquetes con Bower](#)
-			- [Sección 5: Mixins de SASS](#)
-			- [Sección 6: Guía de estilos automática](#)
-			- [Sección 7: Otras mejoras](#)
-	- [Folder structure](#)
-	- [Requirements:](#)
-		- [Support](#)
-	- [Gulp Tasks](#)
-		- [Task: "dev" | Development (default)](#)
-		- [Task: "comps" | Components](#)
-		- [Task: "build" | Distribution](#)
-
-
----
 
 #Curso Web-Project-Boilerplate
 Por Lucas Dasso, Alexis Boggan, y Pablo Galano
 
 Boilerplate for web projects with gulp, sass, and bootstrap.Boilerplate for web projects.
 
+---
+
+**Indice**
+
+- [Contenido del curso](#Contenido del curso)
+	- [Prerrequisitos:](#Prerrequisitos)
+		- [Sección 1: Introducción](#Sección 1: Introducción)
+		- [Sección 2: Automatización básica](#Sección 2: Automatización básica)
+		- [Sección 3: Automatización de estilos con SASS](#Sección 3: Automatización de estilos con SASS)
+		- [Sección 4: Administración de paquetes con Bower](#Sección 4: Administración de paquetes con Bower)
+		- [Sección 5: Mixins de SASS](#Sección 5: Mixins de SASS)
+		- [Sección 6: Guía de estilos automática](#Sección 6: Guía de estilos automática)
+		- [Sección 7: Otras mejoras](#Sección 7: Otras mejoras)
+- [Estructura de carpetas](#Estructura de carpetas)
+- [Requerimientos:](#Requerimientos)
+	- [Tecnologías](#)
+- [Tareas de Gulp](#)
+	- [Task: "dev"](#Task: "dev")
+	- [Task: "comps"](#Task: "comps")
+	- [Task: "build"](#Task: "build")
+---
 
 
 
@@ -86,7 +85,7 @@ js).
 
 ---
 
-##Folder structure
+##Estructura de carpetas
 	+---components
 	+---dev
 	+---dist
@@ -104,7 +103,7 @@ js).
 - **\dist**: Where the static compiled project reside, after a build.
 	
 		
-##Requirements:
+##Requerimientos:
 - [Git] / [Git for Mac]
 - [Node.js] / [Node.js for Mac])
 - [Ruby] / [Ruby for Mac] with RVM
@@ -118,7 +117,7 @@ Jus open the git console and run this command:
 
 	$ git config --global url."https://".insteadOf git://
 
-###Support
+###Tecnologías
 - Sass
 - Bootstrap-Sass-official
 - Font-Awesome
@@ -127,26 +126,29 @@ Jus open the git console and run this command:
 - MediaQueries in IE8.
 
 
-##Gulp Tasks
+##Tareas de Gulp
 
-### Task: "dev" | Development (default)
+### Task: "dev"
+_For development (default)_
 
 ```
-$	gulp
+$ gulp
 ```
 This task compile all files from **\src** folder fo **\dev** folder, and start the web server for development.
 
-### Task: "comps" | Components
+### Task: "comps"
+_For components_
 
 ```
-$	gulp comps
+$ gulp comps
 ```
 This task compile all files from **\src** folder fo **\dev** folder, then copy the **\js**, **\css**, **\images**, and **\fonts** folder to the **\components** folder, and start the web server for component development.
 
-### Task: "build" | Distribution
+### Task: "build"
+_For distribution_
 
 ```
-$	gulp build
+$ gulp build
 ```
 This task compile all files from **\src** folder fo **\dist** folder.
 
