@@ -8,22 +8,23 @@ Boilerplate for web projects with gulp, sass, and bootstrap.Boilerplate for web 
 
 **Indice**
 
-- [Contenido del curso](#Contenido del curso)
+- [Contenido del curso](#Contenido-del-curso)
 	- [Prerrequisitos:](#Prerrequisitos)
-		- [Sección 1: Introducción](#Sección 1: Introducción)
-		- [Sección 2: Automatización básica](#Sección 2: Automatización básica)
-		- [Sección 3: Automatización de estilos con SASS](#Sección 3: Automatización de estilos con SASS)
-		- [Sección 4: Administración de paquetes con Bower](#Sección 4: Administración de paquetes con Bower)
-		- [Sección 5: Mixins de SASS](#Sección 5: Mixins de SASS)
-		- [Sección 6: Guía de estilos automática](#Sección 6: Guía de estilos automática)
-		- [Sección 7: Otras mejoras](#Sección 7: Otras mejoras)
-- [Estructura de carpetas](#Estructura de carpetas)
+		- [Sección 1: Introducción](#Sección-1:-Introducción)
+		- [Sección 2: Automatización básica](#Sección-2:-Automatización-básica)
+		- [Sección 3: Automatización de estilos con SASS](#Sección 3:-Automatización-de-estilos-con-SASS)
+		- [Sección 4: Administración de paquetes con Bower](#Sección-4:-Administración-de-paquetes-con-Bower)
+		- [Sección 5: Mixins de SASS](#Sección-5:-Mixins-de-SASS)
+		- [Sección 6: Guía de estilos automática](#Sección-6:-Guía-de-estilos-automática)
+		- [Sección 7: Otras mejoras](#Sección-7:-Otras-mejoras)
+- [Estructura de carpetas](#Estructura-de-carpetas)
 - [Requerimientos:](#Requerimientos)
-	- [Tecnologías](#)
-- [Tareas de Gulp](#)
-	- [Task: "dev"](#Task: "dev")
-	- [Task: "comps"](#Task: "comps")
-	- [Task: "build"](#Task: "build")
+	- [Tecnologías](#Tecnologías)
+- [Tareas de Gulp](#Tareas-de-Gulp)
+	- [Task: "dev"](#Task:-"dev")
+	- [Task: "comps"](#Task:-"comps")
+	- [Task: "build"](#Task:-"build")
+
 ---
 
 
