@@ -81,7 +81,7 @@ js).
 	
 		
 ##Requirements:
-- [Git] / [Git for Mac])
+- [Git] / [Git for Mac]
 - [Node.js] / [Node.js for Mac])
 - [Ruby] / [Ruby for Mac] with RVM
 - [Gulp]
