@@ -1,6 +1,6 @@
 
 #Curso Web-Project-Boilerplate
-Por Lucas Dasso, Alexis Boggan, y Pablo Galano
+Por Lucas Dasso
 
 Boilerplate for web projects with gulp, sass, and bootstrap.Boilerplate for web projects.
 
