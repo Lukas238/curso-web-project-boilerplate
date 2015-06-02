@@ -24,7 +24,7 @@ Boilerplate for web projects with gulp, sass, and bootstrap.Boilerplate for web 
 	- [Sección 6: Guía de estilos automática](#sección-6-guía-de-estilos-automática)
 	- [Sección 7: Otras mejoras](#sección-7-otras-mejoras)
 - [Estructura de carpetas](#estructura-de-carpetas)
-- [Requerimientos:](#requerimientos)
+- [Requerimientos](#requerimientos)
 - [Tareas de Gulp](#tareas-de-gulp)
 	- [Task: "dev"](#task-dev)
 	- [Task: "comps"](#task-comps)
@@ -103,7 +103,7 @@ js).
 - **\dist**: Where the static compiled project reside, after a build.
 	
 		
-##Requerimientos:
+##Requerimientos
 - [Git] / [Git for Mac]
 - [Node.js] / [Node.js for Mac])
 - [Ruby] / [Ruby for Mac] with RVM
