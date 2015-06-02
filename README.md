@@ -154,12 +154,18 @@ This task compile all files from **\src** folder fo **\dist** folder.
 
 ---
 
-#Acerca de
+##Acerca de
 
 Curso creado y dictado por [Lucas Dasso].
 - Web: <http://www.c238.com.ar>
 - Email: <dassolucas@c238.com.ar>
 - LinkedIn: <http://ar.linkedin.com/in/lucasdasso>
+
+---
+Última actualización: 2015-06-02
+
+
+
 
 [Git]: http://git-scm.com/download/win
 [Git for Mac]: http://git-scm.com/download/mac
