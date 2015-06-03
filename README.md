@@ -47,7 +47,7 @@ Boilerplate para proyectos web, con Gulp, Sass, y Bootstrap3.
 - Configuración inicial (package.json). 
 - Node  package manager
 - Introducción básica a administrador de tareas Gulp.
-- Gulp. Servidor web en dist folder.
+- Gulp. Servidor web en **\dev** folder.
 js).
 
 ###Sección 3: Automatización de estilos con SASS
