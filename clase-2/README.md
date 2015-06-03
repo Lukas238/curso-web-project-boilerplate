@@ -6,11 +6,11 @@
 - Node  package manager
 - Introducción básica a administrador de tareas Gulp.
 - Gulp. Servidor web en dist folder.
-js).
 
 
 ---
-###Me interea tu opinión:
+####Me interea tu opinión:
+
 Completa la **Encuesta de satisfacción**: <http://goo.gl/forms/VIOTJRm6NR>
 ---
 
