@@ -24,7 +24,7 @@ gulp.task('clean:dev', function(cb){
 });
 
 gulp.task('html', function () {
-	gulp.src(cfg.src+'/**/*.html')
+	gulp.src(cfg.src+'/*.html')
 	.pipe(changed(cfg.dev))
 	.pipe(gulp.dest(cfg.dev));
 });
@@ -32,7 +32,7 @@ gulp.task('html', function () {
 
 gulp.task('css', function () {
 
-	gulp.src(cfg.src+'/scss/styles.css')
+	gulp.src(cfg.src+'/css/styles.css')
 	.pipe(autoprefixer('last 4 version'))
 	.pipe(gulp.dest(cfg.dev+'/css'))
 	.pipe(minifyCSS({processImport: false}))
@@ -96,14 +96,14 @@ gulp.task('bs-reload', function () {
 // DEV
 gulp.task('default', ['html', 'css', 'js', 'fonts', 'images', 'browser-sync'], function(){
 		
-		gulp.watch(cfg.src+'/**/*.html', ['html']);
-		gulp.watch(cfg.src+'/css/**/*', ['css']);
+		gulp.watch(cfg.src+'/*.html', ['html']);
+		gulp.watch(cfg.src+'/css/*', ['css']);
 		gulp.watch(cfg.src+'/js/**/*', ['js']);
 		gulp.watch(cfg.src+'/images/**/*', ['images']);
 		
 		gulp.watch([
-			cfg.dev + '/**/.html',
-			cfg.dev + '/css/**/*',
+			cfg.dev + '/*.html',
+			cfg.dev + '/css/*',
 			cfg.dev + '/js/**/*',
 			cfg.dev + '/images/**/*'
 		], ['bs-reload']);

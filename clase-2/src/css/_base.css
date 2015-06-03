@@ -2,24 +2,8 @@
 	BASE
 ***********************/
 
-@import "bootstrap/variables";
-@import "_variables"; 
-
-//Bootstrap button mixins
-@import "bootstrap/mixins/opacity";
-@import "bootstrap/mixins/tab-focus";
-@import "bootstrap/mixins/vendor-prefixes";
-@import "bootstrap/mixins/buttons";
-@import "bootstrap/buttons";
-
-//Bootstrap grid mixins
-@import "bootstrap/mixins/clearfix";
-@import "bootstrap/mixins/grid-framework";
-@import "bootstrap/mixins/grid";
-
-@import "_fonts"; 
-@import "_mixins";
-@import "_globals";
+@import url("_fonts.css"); 
+@import url("_globals.css");
 
 
 	

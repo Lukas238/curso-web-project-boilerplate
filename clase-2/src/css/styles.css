@@ -2,6 +2,6 @@
 	STYLES
 *****************************/
 
-@import "_base";
-@import "_layout";
-@import "components/all";
+@import "_base.css";
+@import "_layout.css";
+@import "components/_all.css";
