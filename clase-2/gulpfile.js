@@ -44,9 +44,9 @@ gulp.src = function() {
 
 //HTML
 gulp.task('html', function () {
-	return gulp.src(cfg.src+'/*.html')
+	return gulp.src(cfg.src+'/**/*.html')
 	.pipe(gulp.dest(cfg.dev))
-	.pipe(browserSync.stream());
+	.pipe(browserSync.reload({stream:true}));
 });
 
 //CSS
@@ -58,7 +58,7 @@ gulp.task('css', function () {
 	.pipe(minifyCSS({processImport: false}))
 	.pipe(rename({ suffix: '.min' }))
 	.pipe(gulp.dest(cfg.dev+'/css'))
-	.pipe(browserSync.stream());
+	.pipe(browserSync.reload({stream:true}));
 });
 
 //SCRIPTS
@@ -70,14 +70,14 @@ gulp.task('js', function(){
     .pipe(uglify())
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest(cfg.dev+'/js'))
-	.pipe(browserSync.stream());
+	.pipe(browserSync.reload({stream:true}));
 });
 
 //FONTS
 gulp.task('fonts', function () {
     return gulp.src(cfg.src+'/fonts/*')
     .pipe(gulp.dest(cfg.dev+'/fonts'))
-	.pipe(browserSync.stream());
+	.pipe(browserSync.reload({stream:true}));
 });
 
 
@@ -95,7 +95,7 @@ gulp.task('images_optimize', function(tmp) {
 gulp.task('images', ['images_optimize'], function() {
     return gulp.src(cfg.src+'/images/**/*')
     .pipe(gulp.dest(cfg.dev+'/images'))
-	.pipe(browserSync.stream());
+	.pipe(browserSync.reload({stream:true}));
 });
 
 
@@ -109,10 +109,6 @@ gulp.task('browser-sync', function() {
     });
 });
 
-gulp.task('bs-reload', function () {
-    browserSync.reload();
-});
-
 
 /******************************
 	USER TASKS 
@@ -120,8 +116,8 @@ gulp.task('bs-reload', function () {
 
 // DEV
 gulp.task('default', ['html', 'css', 'js', 'fonts', 'images', 'browser-sync'], function(){
-	gulp.watch(cfg.src+'/*.html', ['html', 'bs-reload']);
-	gulp.watch(cfg.src+'/css/**/_*.css', ['css', 'bs-reload']);
-	gulp.watch(cfg.src+'/js/**/*', ['js', 'bs-reload']);
-	gulp.watch(cfg.src+'/images/**/*', ['images', 'bs-reload']);
+	gulp.watch(cfg.src+'/**/*.html', ['html']);
+	gulp.watch(cfg.src+'/css/*.css', ['css']);
+	gulp.watch(cfg.src+'/js/**/*.js', ['js']);
+	gulp.watch(cfg.src+'/images/**/*', ['images']);
 });
