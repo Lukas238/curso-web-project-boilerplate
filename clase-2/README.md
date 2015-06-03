@@ -12,6 +12,7 @@
 ####Me interea tu opinión:
 
 Completa la **Encuesta de satisfacción**: <http://goo.gl/forms/VIOTJRm6NR>
+
 ---
 
 ##Estructura de carpetas
