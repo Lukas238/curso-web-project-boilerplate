@@ -1,9 +1,16 @@
+/******************************
+			SETUP
+******************************/
+
+//PLUGINS
 var gulp = require('gulp'),
-    browserSync = require('browser-sync'),
+	plumber = require('gulp-plumber'),
+	gutil = require('gulp-util'),
+	changed = require('gulp-changed'),
+    browserSync = require('browser-sync').create(),
     autoprefixer = require('gulp-autoprefixer'),
     rename = require('gulp-rename'),
     minifyCSS = require('gulp-minify-css'),
-	changed = require('gulp-changed'),
 	jshint = require('gulp-jshint'),
 	uglify = require('gulp-uglify'),
 	imagemin    = require('gulp-imagemin'),
@@ -11,53 +18,70 @@ var gulp = require('gulp'),
 	package = require('./package.json'); 
 	
 
+//VARIABLES GLOBALES
 var cfg = {
 	src: './src',
 	dev: './dev'
 }
 
+//ERROR HANDLING
+var gulp_src = gulp.src;
+gulp.src = function() {
+	return gulp_src.apply(gulp, arguments)
+	.pipe(plumber(function(error) {
+			gutil.log(gutil.colors.red('Error (' + error.plugin + '): ' + error.reason));
+			gutil.log(gutil.colors.yellow('Line '+ error.line+', Column ' + error.column + ' | ' + error.file));
+			gutil.log(gutil.colors.grey('Path: ' + error.fileName));
+			this.emit('end');
+		})
+	);
+};
 
-/***********************************************************/
 
-gulp.task('clean:dev', function(cb){
-	del(cfg.dev+'/*', cb);
-});
+/******************************
+			TASKS 
+******************************/
 
+//HTML
 gulp.task('html', function () {
-	gulp.src(cfg.src+'/*.html')
-	.pipe(changed(cfg.dev))
-	.pipe(gulp.dest(cfg.dev));
+	return gulp.src(cfg.src+'/*.html')
+	.pipe(gulp.dest(cfg.dev))
+	.pipe(browserSync.stream());
 });
 
-
+//CSS
 gulp.task('css', function () {
-
-	gulp.src(cfg.src+'/css/styles.css')
+	return gulp.src(cfg.src+'/css/**/*.css')
+	.pipe(changed(cfg.dev+'/css'))
 	.pipe(autoprefixer('last 4 version'))
 	.pipe(gulp.dest(cfg.dev+'/css'))
 	.pipe(minifyCSS({processImport: false}))
 	.pipe(rename({ suffix: '.min' }))
-	.pipe(gulp.dest(cfg.dev+'/css'));
+	.pipe(gulp.dest(cfg.dev+'/css'))
+	.pipe(browserSync.stream());
 });
 
+//SCRIPTS
 gulp.task('js', function(){
-  return gulp.src(cfg.src+'/js/scripts.js')
+	return gulp.src(cfg.src+'/js/scripts.js')
     .pipe(jshint('.jshintrc'))
     .pipe(jshint.reporter('jshint-stylish'))
     .pipe(gulp.dest(cfg.dev+'/js'))
     .pipe(uglify())
     .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest(cfg.dev+'/js'));
+    .pipe(gulp.dest(cfg.dev+'/js'))
+	.pipe(browserSync.stream());
 });
 
-
+//FONTS
 gulp.task('fonts', function () {
     return gulp.src(cfg.src+'/fonts/*')
-	.pipe(changed(cfg.dev+'/fonts'))
-    .pipe(gulp.dest(cfg.dev+'/fonts'));
+    .pipe(gulp.dest(cfg.dev+'/fonts'))
+	.pipe(browserSync.stream());
 });
 
 
+//IMAGES: OPTIMIZE
 gulp.task('images_optimize', function(tmp) {
     return gulp.src([
 		cfg.src+'/images/*.jpg',
@@ -67,45 +91,37 @@ gulp.task('images_optimize', function(tmp) {
 	.pipe(gulp.dest(cfg.dev+'/images'));
 });
 
-
+//IMAGES
 gulp.task('images', ['images_optimize'], function() {
-    gulp.src(cfg.src+'/images/**/*')
-    .pipe(gulp.dest(cfg.dev+'/images'));
+    return gulp.src(cfg.src+'/images/**/*')
+    .pipe(gulp.dest(cfg.dev+'/images'))
+	.pipe(browserSync.stream());
 });
 
 
 
+//SERVER: DEV
 gulp.task('browser-sync', function() {
-    browserSync.init(null, {
+    browserSync.init({
         server: {
-            baseDir: cfg.dev,
+            baseDir: cfg.dev
         }
     });
 });
-
 
 gulp.task('bs-reload', function () {
     browserSync.reload();
 });
 
 
-/******************************************
-	TASKS
-*******************************************/
+/******************************
+	USER TASKS 
+******************************/
 
 // DEV
 gulp.task('default', ['html', 'css', 'js', 'fonts', 'images', 'browser-sync'], function(){
-		
-		gulp.watch(cfg.src+'/*.html', ['html']);
-		gulp.watch(cfg.src+'/css/*', ['css']);
-		gulp.watch(cfg.src+'/js/**/*', ['js']);
-		gulp.watch(cfg.src+'/images/**/*', ['images']);
-		
-		gulp.watch([
-			cfg.dev + '/*.html',
-			cfg.dev + '/css/*',
-			cfg.dev + '/js/**/*',
-			cfg.dev + '/images/**/*'
-		], ['bs-reload']);
-
+	gulp.watch(cfg.src+'/*.html', ['html', 'bs-reload']);
+	gulp.watch(cfg.src+'/css/**/_*.css', ['css', 'bs-reload']);
+	gulp.watch(cfg.src+'/js/**/*', ['js', 'bs-reload']);
+	gulp.watch(cfg.src+'/images/**/*', ['images', 'bs-reload']);
 });

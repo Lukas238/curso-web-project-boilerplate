@@ -1,7 +1,8 @@
-﻿/*****************************
+﻿
+/*****************************
 	STYLES
 *****************************/
 
 @import "_base.css";
-@import "_layout.css";
-@import "components/_all.css";
+@import "_layout.css"; 
+@import "_components/_all.css"; 

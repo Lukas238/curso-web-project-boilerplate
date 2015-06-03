@@ -2,8 +2,9 @@
 	BASE
 ***********************/
 
-@import url("_fonts.css"); 
-@import url("_globals.css");
+@import "//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.css";  
+@import "_fonts.css"; 
+@import "_globals.css";
 
 
 	
