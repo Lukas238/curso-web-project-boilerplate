@@ -8,9 +8,13 @@
 - Gulp. Servidor web en dist folder.
 js).
 
+
+---
+###Me interea tu opinión:
+Completa la **Encuesta de satisfacción**: <http://goo.gl/forms/VIOTJRm6NR>
 ---
 
-##estructura de carpetas
+##Estructura de carpetas
 	+---dev
 	+---src
 		+---fonts
@@ -30,5 +34,5 @@ js).
 ```
 $	gulp
 ```
-This task compile all files from **\src** folder fo **\dev** folder, and start the web server for development.
+Esta tarea compilar todos los archivos de la carpeta ** \ src ** a la carpeta ** \ dev **, e iniciar el servidor web.
 
