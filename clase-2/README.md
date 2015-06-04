@@ -21,9 +21,9 @@ Completa la **Encuesta de satisfacción**: <http://goo.gl/forms/VIOTJRm6NR>
 
 ---
 
-#Temas vistos en clase
+##Temas vistos en clase
 
-##Configuración inicial (package.json).
+###Configuración inicial (package.json).
 
 1. Primero que nada debemos crear una carpeta para nuestro proyecto. Por ejemplo en **C:\Work\curos2**.
 2. Luego debemos abrir una vendana de comandos en esa carpeta ([ver video](https://www.youtube.com/watch?v=YjuNpLkLe0U)).
@@ -34,7 +34,7 @@ $ npm init
 4. Esto iniciara un proceso de preguntas donde podemos completar la información del proyecto, como _Autor_, _Titulo del proyecto_, _versión_, etc. (o tambien podemos dejar todos los valores por default solo precionando _enter_ a cada pregunta).
 5. Ya tenemos creado un **package.json** básico con el cual trabajar.
 
-##**N**ode **P**ackage **M**anager (npm). 
+###**N**ode **P**ackage **M**anager (npm)
 
 1. Ahora podremos  ir instalando los diferentes plugins que nuestro proyecto necesita.  
 
@@ -44,7 +44,7 @@ $ npm install --savedev gulp-minify-css
 ```
 El parámetro _--savedev_ le dice a Node que -ademas de instalar el plugin- lo anote en nuestro archivo **package.json** como una dependencia del proyecto.
 
-###Instalación automática de plugins
+####Instalación automática de plugins
 Cuando bajamos un proyecto ya existente, con su **package.json** completo con los plugins reuqeridos, solo vamos a necesitamos instalar dichos plugins de forma autmatica.
 
 Para eso baste el siguiente comando:
@@ -55,9 +55,9 @@ Al no especificar el nombre del plugins que queremos instalar, Node usara la lis
 
 ---
 
-#Boilerplate
+##Boilerplate
 
-##Estructura de carpetas
+###Estructura de carpetas
 	+---dev
 	+---src
 		+---fonts
@@ -71,9 +71,9 @@ Al no especificar el nombre del plugins que queremos instalar, Node usara la lis
 
 ---
 
-##Gulp Tasks
+###Gulp Tasks
 
-### Task: "dev" | Development (default)
+#### Task: "dev" | Development (default)
 
 ```
 $	gulp
