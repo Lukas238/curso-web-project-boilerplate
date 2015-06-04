@@ -29,6 +29,7 @@ Boilerplate para proyectos web, con Gulp, Sass, y Bootstrap3.
 	- [Task: "dev"](#task-dev)
 	- [Task: "comps"](#task-comps)
 	- [Task: "build"](#task-build)
+- [Utilidades](#utilidades)
 - [Acerca de](#acerca-de)
 
 ---
@@ -145,6 +146,11 @@ $ gulp build
 This task compile all files from **\src** folder fo **\dist** folder.
 
 ---
+##Utilidades
+
+- [Markdown Plus] - Add-on para Chrome   
+Permite interpretar ver archivos markdown, como los readde.md de GitHub.
+
 
 ##Acerca de
 
@@ -169,5 +175,7 @@ Curso creado y dictado por [Lucas Dasso].
 [Bower]: http://bower.io/#install-bower
 [SmartGit]: http://www.syntevo.com/smartgit/download?file=smartgit/smartgit-win32-setup-jre-6_5_8.zip
 [SmartGit for Mac]: http://www.syntevo.com/smartgit/download?file=smartgit/smartgit-macosx-6_5_8.dmg
+
+[Markdown Plus]: https://chrome.google.com/webstore/detail/markdown-preview-plus/febilkbfcbhebfnokafefeacimjdckgl
 
 [Lucas Dasso]: http://www.c238.com.ar
