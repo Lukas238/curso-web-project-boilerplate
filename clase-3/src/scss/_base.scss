@@ -1,0 +1,21 @@
+﻿/**********************
+	BASE
+***********************/
+
+@import "//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.css";
+
+@import "bootstrap/variables";
+@import "variables"; 
+
+@import "bootstrap/mixins";
+
+@import "fonts"; 
+@import "mixins";
+@import "globals";
+
+
+	
+/* IE8 HTML5 support - html5shive */
+article, aside, figure, footer, header, hgroup, main, menu, nav, section {
+	display: block;
+}
