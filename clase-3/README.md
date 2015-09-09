@@ -18,6 +18,7 @@
 
 #####Atomic design
 - [Atomic Design]
+- [What is atomic design]
 - Book [_Atomic Design_], by Brad Frost
 - [Challenging CSS Best Practices]
 - [The “Other” Interface: Atomic Design With Sass]
@@ -26,6 +27,7 @@
 - [Sass Basics]
 - [SassMeister]
 - [Sass Functions Cheat Sheet]
+- [Bootstrap3 Sass grid mixins]
 - [Sass & Compass Color Functions]
 - [DRY-ing Out Your Sass Mixins]
 
@@ -76,11 +78,13 @@ Esta tarea compilar todos los archivos de la carpeta **\src** a la carpeta **\co
 [Link al curso]: https://github.com/Lukas238/curso-web-project-boilerplate
 
 [Atomic Design]: http://bradfrost.com/blog/post/atomic-web-design/
+[What is atomic design]: https://habaneroconsulting.com/insights/what-is-atomic-design#.VXhCX_l_Pp4
 [_Atomic Design_]: http://atomicdesign.bradfrost.com/table-of-contents/
 [Challenging CSS Best Practices]: http://www.smashingmagazine.com/2013/10/21/challenging-css-best-practices-atomic-approach/
 [The “Other” Interface: Atomic Design With Sass]: http://www.smashingmagazine.com/2013/08/02/other-interface-atomic-design-sass/
 [Sass Basics]: http://sass-lang.com/guide
 [SassMeister]: http://sassmeister.com/
 [Sass Functions Cheat Sheet]: http://www.cheatography.com/hamidyfine/cheat-sheets/sass-functions/
+[Bootstrap3 Sass grid mixins]: http://www.cheatography.com/lukas238/cheat-sheets/bootstrap3-sass-mixins/
 [Sass & Compass Color Functions]: http://jackiebalzer.com/color
 [DRY-ing Out Your Sass Mixins]: http://alistapart.com/article/dry-ing-out-your-sass-mixins

@@ -1,5 +1,5 @@
 {
-  "name": "mastercard-br-mass",
+  "name": "wep-project-boilerplate",
   "version": "1.0.0",
   "authors": [
     "MRM-MCCANN Buenos Aires"
@@ -7,11 +7,12 @@
   "moduleType": [
     "node"
   ],
-  "dependencies": {
-	"jquery": "~ 1.11.3",
+  "devDependencies": {
+    "jquery": "~ 1.11.3",
     "bootstrap-sass-official": "~3.3.4",
     "bootstrap": "~3.3.4",
-    "jQuery.mmenu": "~5.2.0"
+    "jQuery.mmenu": "~5.2.0",
+    "html5shiv": "~3.7.2"
   },
   "license": "MIT",
   "ignore": [
@@ -22,7 +23,5 @@
     "test",
     "tests"
   ],
-  "devDependencies": {
-    "html5shiv": "~3.7.2"
-  }
+  "homepage": "https://github.com/Lukas238/curso-web-project-boilerplate"
 }
